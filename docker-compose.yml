@@ -21,7 +21,7 @@ services:
   ls_minio:
     image: minio/minio:latest
     container_name: ls_minio
-    command: server /data
+    command: server /data --console-address ":9001"
     environment:
       MINIO_ROOT_USER: minio
       MINIO_ROOT_PASSWORD: minio123
@@ -32,7 +32,7 @@ services:
       - "9001:9001" # MinIO console
 
   # ---------------------------
-  # Label Studio
+  # Label Studio 
   # ---------------------------
   labelstudio:
     image: heartexlabs/label-studio:latest
