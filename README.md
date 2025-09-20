@@ -5,7 +5,7 @@ Setup Instructions
 
 Clone the repo:
 
-git clone ["this_repo_url"](https://github.com/j-sh-park/caldarium_med_parsing_start/)
+git clone https://github.com/j-sh-park/caldarium_med_parsing_start/
 
 cd caldarium_med_parsing_start
 
