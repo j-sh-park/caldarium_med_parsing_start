@@ -1,0 +1,65 @@
+services:
+
+  # ---------------------------
+  # Postgres database
+  # ---------------------------
+  ls_postgres:
+    image: postgres:15
+    container_name: ls_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: labelstudio
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  # ---------------------------
+  # MinIO object storage
+  # ---------------------------
+  ls_minio:
+    image: minio/minio:latest
+    container_name: ls_minio
+    command: server /data
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    volumes:
+      - minio_data:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001" # MinIO console
+
+  # ---------------------------
+  # Label Studio
+  # ---------------------------
+  labelstudio:
+    image: heartexlabs/label-studio:latest
+    container_name: labelstudio
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@ls_postgres:5432/labelstudio
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ls_postgres
+      - ls_minio
+
+  # ---------------------------
+  # Helper container for bootstrap/export
+  # ---------------------------
+  helper:
+    build:
+      context: .
+      dockerfile: Dockerfiles/helper.Dockerfile
+    container_name: ls_helper
+    volumes:
+      - .:/workspace
+    network_mode: service:labelstudio
+    tty: true
+
+
+volumes:
+  postgres_data:
+  minio_data:
+
