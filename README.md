@@ -26,13 +26,17 @@ docker compose run helper bash
 
 To Restore data:
 
+(Windows)
 ./bootstrap.sh
-
+(Mac)
+bash bootstrap.sh
 
 To Export data (after changes):
 
+(Windows)
 ./export_data.sh
-
+(Mac)
+bash export_data.sh
 
 Access Label Studio: http://localhost:8080
 Access MinIO: http://localhost:9000
