@@ -9,7 +9,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: labelstudio
+      POSTGRES_DB: med_parsing
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -62,4 +62,5 @@ services:
 volumes:
   postgres_data:
   minio_data:
+
 
