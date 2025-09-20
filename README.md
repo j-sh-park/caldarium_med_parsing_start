@@ -6,6 +6,7 @@ Setup Instructions
 Clone the repo:
 
 git clone "this_repo_url"
+
 cd caldarium_med_parsing_start
 
 
@@ -28,6 +29,7 @@ To Restore data:
 
 (Windows)
 ./bootstrap.sh
+
 (Mac)
 bash bootstrap.sh
 
@@ -35,8 +37,10 @@ To Export data (after changes):
 
 (Windows)
 ./export_data.sh
+
 (Mac)
 bash export_data.sh
 
 Access Label Studio: http://localhost:8080
+
 Access MinIO: http://localhost:9000
