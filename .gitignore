@@ -1,0 +1,24 @@
+# Docker runtime volumes
+postgres_data/
+minio_data/
+labelstudio_data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
