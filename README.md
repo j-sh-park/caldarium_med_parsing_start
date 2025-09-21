@@ -34,7 +34,9 @@ We recommend that students clone this repository and use it as a starting point 
 
 ### Prerequisites
 
-You need to have both docker and git installed before-hand.
+You need to have both Docker and Git installed before-hand.
+
+I recommend Docker Desktop as well. You can use it to easily see if the container/images are running. You can also easily use it to delete the container/services if you need a clean wipe.
 
 ### 1. Clone the Repository
 
