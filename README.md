@@ -22,8 +22,8 @@ We recommend that students clone this repository and use it as a starting point 
     ├── FastAPI/                                           - (Not Provided Folder) This folder would contain the files that you create, including FastAPI files
     |   ├── your first api files                           - (Not Provided File) FastAPI file
     |   ├── the rest of your api files or other files      - (Not Provided File) FastAPI file or other project file
-    ├── Another Project Folder/                            - (Not Provided Folder) Another folder to house other project files you create, not neccesary but feel free to split your project files into as many folder as you like
-    |   └── Some Project Files                             - (Not Provided Fiesl) Create and store them here id you'd like
+    ├── Another Project Folder/                            - (Not Provided Folder) Another folder maybe to house .json files if parsing happens before postgres integration
+    |   └── Some Project Files                             - (Not Provided Files) .json or other files
     ├── README.md                                          - (Provided File) This file is the one you are reading right now. Once you start this project, it should be modified to represent both this starting framework as well as your contributions.
     ├── docker-compose.yml                                 - (Provided File) Defines the Docker container, services, and their properties.
     ├── export_data.sh                                     - (Provided File) Script to export data from MinIO and PostGres server.
