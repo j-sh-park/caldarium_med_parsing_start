@@ -117,13 +117,25 @@ On Mac/Linux:
 
 ***bash bootstrap.sh***
 
-### 6. Access Services in Your Browser
+### 6. Access Services
+
+#### You Can Access the Following in Web Browser
 
 Label Studio (Annotation Tool): http://localhost:8080
 
+For Label Studio you'll have to create your own account.
+
 MinIO (Object Storage): http://localhost:9000
 
-Tip: Use these URLs in your browser to interact with the services running inside Docker.
+MinIO Login -> username: [minio], password: [minio123]
+
+#### Access Postgres with the Following Details
+
+Host name/address: localhost
+port: 5432
+user: postgres
+password: postgres
+db: med_parsing
 
 ## Schema Validation
 
