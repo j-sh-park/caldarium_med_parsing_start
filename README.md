@@ -141,6 +141,12 @@ db: med_parsing
 
 Once you are ready to validate your .json file (hopefully containing fields and values parsed from the pdfs) you will need to execute the schema_validation.py script.
 
+## Licensing
+
+This project is provided under the **Apache 2.0** license.  
+See [NOTICE.txt](NOTICE.txt) for details.
+
+
 The script takes the following arguments:
 
 1. instance: [REQUIRED] the file path to the .json file you want to compare to the schema.
