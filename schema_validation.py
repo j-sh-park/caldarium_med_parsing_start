@@ -12,7 +12,7 @@ def main():
     )
     parser.add_argument(
         "-s", "--schema",
-        default="invoice.json",
+        default="schemas/invoice.json",
         help="Path to the JSON schema file (default: invoice.json)"
     )
 
@@ -43,3 +43,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
