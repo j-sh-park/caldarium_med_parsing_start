@@ -16,8 +16,8 @@ MINIO_PASSWORD=${MINIO_ROOT_PASSWORD:-minio123}
 # Export Postgres
 mkdir -p ./postgres_dump
 echo "Exporting Postgres database..."
-PGPASSWORD=$POSTGRES_PASSWORD pg_dump -h $POSTGRES_HOST -p $POSTGRES_PORT -U $POSTGRES_USER -d $POSTGRES_DB > ./postgres_dump/labelstudio_dump.sql
-echo "Postgres dump saved to ./postgres_dump/labelstudio_dump.sql"
+PGPASSWORD=$POSTGRES_PASSWORD pg_dump -h $POSTGRES_HOST -p $POSTGRES_PORT -U $POSTGRES_USER -d $POSTGRES_DB > ./postgres_dump/med_parsing_dump.sql
+echo "Postgres dump saved to ./postgres_dump/med_parsing_dump.sql"
 
 # Export MinIO
 mkdir -p ./minio_bucket
