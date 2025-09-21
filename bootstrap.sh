@@ -14,7 +14,7 @@ MINIO_USER=${MINIO_ROOT_USER:-minio}
 MINIO_PASSWORD=${MINIO_ROOT_PASSWORD:-minio123}
 
 # Restore Postgres
-if [ -f "./postgres_dump/labelstudio_dump.sql" ]; then
+if [ -f "./postgres_dump/med_parsing_dump.sql" ]; then
     echo "Restoring Postgres database..."
     PGPASSWORD=$POSTGRES_PASSWORD psql -h $POSTGRES_HOST -p $POSTGRES_PORT -U $POSTGRES_USER -d $POSTGRES_DB -f ./postgres_dump/med_parsing_dump.sql
 else
