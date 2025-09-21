@@ -28,6 +28,7 @@ We recommend that students clone this repository and use it as a starting point 
     ├── docker-compose.yml                                 - (Provided File) Defines the Docker container, services, and their properties.
     ├── export_data.sh                                     - (Provided File) Script to export data from MinIO and PostGres server.
     ├── bootstrap.sh                                       - (Provided File) Script to load data into MinIO and PostGres server.
+    ├── schema_validation.py                               - (Provided File) Python script to validation parse .json files against the provided schema.
     └── .gitignore                                         - (Provided File) Tells github which files to ignore.
 
 ## Docker Container Setup Instructions and How to Use boostrap and export_data scripts
@@ -37,6 +38,8 @@ We recommend that students clone this repository and use it as a starting point 
 You need to have both Docker and Git installed before-hand.
 
 I recommend Docker Desktop as well. You can use it to easily see if the container/images are running. You can also easily use it to delete the container/images if you need a clean wipe.
+
+You will also need Python installed for schema_validation.py
 
 ### 1. Clone the Repository
 
@@ -121,4 +124,13 @@ Label Studio (Annotation Tool): http://localhost:8080
 MinIO (Object Storage): http://localhost:9000
 
 Tip: Use these URLs in your browser to interact with the services running inside Docker.
+
+## Schema Validation
+
+Once you are ready to validate your .json file (hopefully containing fields and values parsed from the pdfs) you will need to execute the schema_validation.py script.
+
+The script takes the following arguments:
+
+1. instance: [REQUIRED] the file path to the .json file you want to compare to the schema.
+2. schema: [OPTIONAL, ENABLE WITH '--schema' FLAG] the file path to the .json schema that the instance will be compared against. Default file path is: schemas/invoice.json.
 
