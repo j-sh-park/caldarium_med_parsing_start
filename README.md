@@ -32,6 +32,10 @@ We recommend that students clone this repository and use it as a starting point 
 
 ## Docker Container Setup Instructions and How to Use boostrap and export_data scripts
 
+### Prerequisites
+
+You need to have both docker and git installed before-hand.
+
 ### 1. Clone the Repository
 
 First, you need to download the code onto your computer:
