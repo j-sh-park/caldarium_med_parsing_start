@@ -10,19 +10,14 @@ git clone https://github.com/j-sh-park/caldarium_med_parsing_start/
 cd caldarium_med_parsing_start
 
 
-Build helper container:
+Build services:
 
-docker compose build helper
-
-
-Start main services:
-
-docker compose up -d
+docker compose up -d --build
 
 
 Enter helper container:
 
-docker compose run helper bash
+docker compose run --rm helper bash
 
 
 To Restore data:
