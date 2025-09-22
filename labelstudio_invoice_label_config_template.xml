@@ -1,0 +1,88 @@
+<View>
+  <!-- Show the invoice image -->
+  <Image name="image" value="$image"/>
+
+  <Header value="Invoice Metadata"/>
+
+  <!-- Basic invoice info -->
+  <TextArea name="invoice_number" toName="image" placeholder="Invoice Number"/>
+  <TextArea name="patient_id" toName="image" placeholder="Patient ID"/>
+  <TextArea name="invoice_date" toName="image" placeholder="Invoice Date (YYYY-MM-DD)"/>
+  <TextArea name="due_date" toName="image" placeholder="Due Date (YYYY-MM-DD)"/>
+
+  <Header value="Patient Information"/>
+  <TextArea name="patient_name" toName="image" placeholder="Full Patient Name"/>
+  <TextArea name="patient_age" toName="image" placeholder="Patient Age (years)"/>
+  <TextArea name="patient_address" toName="image" placeholder="Patient Address"/>
+  <TextArea name="patient_phone" toName="image" placeholder="Patient Phone"/>
+  <TextArea name="patient_email" toName="image" placeholder="Patient Email"/>
+
+  <Header value="Admission / Discharge"/>
+  <TextArea name="admission_date" toName="image" placeholder="Admission Date (YYYY-MM-DD)"/>
+  <TextArea name="discharge_date" toName="image" placeholder="Discharge Date (YYYY-MM-DD)"/>
+
+  <Header value="Invoice Amounts"/>
+  <TextArea name="subtotal_amount" toName="image" placeholder="Subtotal Amount"/>
+  <TextArea name="discount_amount" toName="image" placeholder="Discount Amount"/>
+  <TextArea name="total_amount" toName="image" placeholder="Total Amount"/>
+
+  <Header value="Line Items (up to 11)"/>
+
+  <Header value="Line Item 1"/>
+  <TextArea name="line1_description" toName="image" placeholder="Description"/>
+  <TextArea name="line1_code" toName="image" placeholder="Code"/>
+  <TextArea name="line1_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 2"/>
+  <TextArea name="line2_description" toName="image" placeholder="Description"/>
+  <TextArea name="line2_code" toName="image" placeholder="Code"/>
+  <TextArea name="line2_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 3"/>
+  <TextArea name="line3_description" toName="image" placeholder="Description"/>
+  <TextArea name="line3_code" toName="image" placeholder="Code"/>
+  <TextArea name="line3_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 4"/>
+  <TextArea name="line4_description" toName="image" placeholder="Description"/>
+  <TextArea name="line4_code" toName="image" placeholder="Code"/>
+  <TextArea name="line4_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 5"/>
+  <TextArea name="line5_description" toName="image" placeholder="Description"/>
+  <TextArea name="line5_code" toName="image" placeholder="Code"/>
+  <TextArea name="line5_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 6"/>
+  <TextArea name="line6_description" toName="image" placeholder="Description"/>
+  <TextArea name="line6_code" toName="image" placeholder="Code"/>
+  <TextArea name="line6_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 7"/>
+  <TextArea name="line7_description" toName="image" placeholder="Description"/>
+  <TextArea name="line7_code" toName="image" placeholder="Code"/>
+  <TextArea name="line7_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 8"/>
+  <TextArea name="line8_description" toName="image" placeholder="Description"/>
+  <TextArea name="line8_code" toName="image" placeholder="Code"/>
+  <TextArea name="line8_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 9"/>
+  <TextArea name="line9_description" toName="image" placeholder="Description"/>
+  <TextArea name="line9_code" toName="image" placeholder="Code"/>
+  <TextArea name="line9_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 10"/>
+  <TextArea name="line10_description" toName="image" placeholder="Description"/>
+  <TextArea name="line10_code" toName="image" placeholder="Code"/>
+  <TextArea name="line10_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Line Item 11"/>
+  <TextArea name="line11_description" toName="image" placeholder="Description"/>
+  <TextArea name="line11_code" toName="image" placeholder="Code"/>
+  <TextArea name="line11_amount" toName="image" placeholder="Amount"/>
+
+  <Header value="Final Notes"/>
+  <TextArea name="notes" toName="image" placeholder="Additional comments"/>
+</View>
