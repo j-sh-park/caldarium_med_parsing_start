@@ -30,6 +30,7 @@ We recommend that students clone this repository and use it as a starting point 
     ├── bootstrap.sh                                       - (Provided File) Script to load data into MinIO and PostGres server.
     ├── schema_validation.py                               - (Provided File) Python script to validation parse .json files against the provided schema.
     ├── Meta Prompt                                        - (Provided File) A prompt you can add when asking questions to an AI chatbot of your choice. Highly recommended for a response that's broken down and easy to understand.
+    ├── labelstudio_invoice_label_config_template.xml      - (Provided File) A template that you can copy and paste into the labelstudio label config code editor.
     ├── NOTICE.txt                                         - (Provided File) Contains license for students to use.
     └── .gitignore                                         - (Provided File) Tells github which files to ignore.
     
