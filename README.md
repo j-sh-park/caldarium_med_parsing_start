@@ -17,8 +17,8 @@ We recommend that students clone this repository and use it as a starting point 
     |       ├── invoice_T1_gen1.pdf                        - (Provided File) This is an invoice pdf
     |       ├── invoice_T1_gen2.pdf                        - (Provided File) Another invoice pdf...
     |       ├── the rest of the invoices...                - (Provided File) ...
-    ├── postgres_dump/                                     - (Provided Folder) This folder houses the PostGres dump file
-    |   └── med_parsing_dump.sql                           - (Provided File) This file will contain your PostGres data that can be loaded into/from the PostGres server
+    ├── postgres_dump/                                     - (Not Provided Folder) This folder houses the PostGres dump file
+    |   └── med_parsing_dump.sql                           - (Not Provided File) This file will contain your PostGres data that can be loaded into/from the PostGres server
     ├── FastAPI/                                           - (Not Provided Folder) This folder would contain the files that you create, including FastAPI files
     |   ├── your first api files                           - (Not Provided File) FastAPI file
     |   ├── the rest of your api files or other files      - (Not Provided File) FastAPI file or other project file
