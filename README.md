@@ -30,6 +30,11 @@ We recommend that students clone this repository and use it as a starting point 
     ├── bootstrap.sh                                       - (Provided File) Script to load data into MinIO and PostGres server.
     ├── schema_validation.py                               - (Provided File) Python script to validation parse .json files against the provided schema.
     └── .gitignore                                         - (Provided File) Tells github which files to ignore.
+    └── Meta Prompt                                        - (Provided File) A prompt you can add when asking questions to an AI chatbot of your choice. Highly recommended for a response that's broken down and easy to understand.
+    
+    
+    
+    
 
 ## Docker Container Setup Instructions and How to Use boostrap and export_data scripts
 
