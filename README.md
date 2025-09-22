@@ -93,7 +93,7 @@ This opens an interactive bash session in the helper container.
 
 After commiting changes to the PostGres DB or uploading pdfs to MinIO, you can export these changes by running the export_data.sh script.
 
-All PostGres data will be dumped into a postgres_dumps folder as a file named med_parsing_dump.sql.
+All PostGres data will be dumped into a postgres_dumps folder as a file named med_parsing_dump.sql. **NOTE:** The  postgres_dumps folder may need to be created before exporting PostGres data.
 
 All files uploaded to MinIO will be saved into folders within the minio_buckets folder. For example, a pdf file named file.pdf stored in MinIO in a bucket named test will be saved into the following file path: minio_buckets/test/file.pdf.
 
