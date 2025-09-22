@@ -29,8 +29,9 @@ We recommend that students clone this repository and use it as a starting point 
     ├── export_data.sh                                     - (Provided File) Script to export data from MinIO and PostGres server.
     ├── bootstrap.sh                                       - (Provided File) Script to load data into MinIO and PostGres server.
     ├── schema_validation.py                               - (Provided File) Python script to validation parse .json files against the provided schema.
+    ├── Meta Prompt                                        - (Provided File) A prompt you can add when asking questions to an AI chatbot of your choice. Highly recommended for a response that's broken down and easy to understand.
+    ├── NOTICE.txt                                         - (Provided File) Contains license for students to use.
     └── .gitignore                                         - (Provided File) Tells github which files to ignore.
-    └── Meta Prompt                                        - (Provided File) A prompt you can add when asking questions to an AI chatbot of your choice. Highly recommended for a response that's broken down and easy to understand.
     
     
     
@@ -146,14 +147,14 @@ db: med_parsing
 
 Once you are ready to validate your .json file (hopefully containing fields and values parsed from the pdfs) you will need to execute the schema_validation.py script.
 
+The script takes the following arguments:
+
+1. instance: [REQUIRED] the file path to the .json file you want to compare to the schema.
+2. schema: [OPTIONAL, ENABLE WITH '--schema' FLAG] the file path to the .json schema that the instance will be compared against. Default file path is: schemas/invoice.json.
+
 ## Licensing
 
 This project is provided under the **Apache 2.0** license.  
 See [NOTICE.txt](NOTICE.txt) for details.
 
-
-The script takes the following arguments:
-
-1. instance: [REQUIRED] the file path to the .json file you want to compare to the schema.
-2. schema: [OPTIONAL, ENABLE WITH '--schema' FLAG] the file path to the .json schema that the instance will be compared against. Default file path is: schemas/invoice.json.
 
